@@ -1,6 +1,6 @@
 {
   "name": "cyclic-http-server",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "An experimental cycle.js driver for node http module",
   "main": "dist/index.js",
   "scripts": {

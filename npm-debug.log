@@ -1,0 +1,119 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@3.10.8
+3 info using node@v6.9.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/pierrot/Documents/projets/personal/cycle-http-server',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/pierrot/.npm/cycle-http-server/1.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/pierrot/.npm correctMkdir not in flight; initializing
+10 info lifecycle cycle-http-server@1.0.0~prepublish: cycle-http-server@1.0.0
+11 silly lifecycle cycle-http-server@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/pierrot/.npm/cycle-http-server/1.0.0/package.tgz',
+12 verbose tar pack   '/Users/pierrot/Documents/projets/personal/cycle-http-server' ]
+13 verbose tarball /Users/pierrot/.npm/cycle-http-server/1.0.0/package.tgz
+14 verbose folder /Users/pierrot/Documents/projets/personal/cycle-http-server
+15 verbose addLocalTarball adding from inside cache /Users/pierrot/.npm/cycle-http-server/1.0.0/package.tgz
+16 verbose correctMkdir /Users/pierrot/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd cycle-http-server@1.0.0
+18 verbose afterAdd /Users/pierrot/.npm/cycle-http-server/1.0.0/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/pierrot/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/pierrot/.npm/cycle-http-server/1.0.0/package/package.json written
+21 silly publish { name: 'cycle-http-server',
+21 silly publish   version: '1.0.0',
+21 silly publish   description: 'An experimental cycle.js driver for node http module',
+21 silly publish   main: 'dist/index.js',
+21 silly publish   scripts:
+21 silly publish    { test: 'echo "Error: no test specified" && exit 1',
+21 silly publish      build: 'babel src -d dist',
+21 silly publish      watch: 'babel src -d dist -w' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/mrpierrot/cycle-http-server.git' },
+21 silly publish   keywords: [ 'cycle.js', 'http', 'server', 'nodejs' ],
+21 silly publish   author: { name: 'Pierre Chabiland' },
+21 silly publish   license: 'MIT',
+21 silly publish   bugs: { url: 'https://github.com/mrpierrot/cycle-http-server/issues' },
+21 silly publish   homepage: 'https://github.com/mrpierrot/cycle-http-server#readme',
+21 silly publish   dependencies:
+21 silly publish    { 'snabbdom-to-html': '^3.1.1',
+21 silly publish      'switch-path': '^1.2.0',
+21 silly publish      xstream: '^10.7.0' },
+21 silly publish   devDependencies:
+21 silly publish    { 'babel-cli': '^6.24.1',
+21 silly publish      'babel-plugin-transform-object-rest-spread': '^6.23.0',
+21 silly publish      'babel-plugin-transform-react-jsx': '^6.24.1',
+21 silly publish      'babel-preset-env': '^1.5.1' },
+21 silly publish   readme: '# cycle-http-server\n\nAn experimental Cycle.js driver for node http module with routing compliant with express middlewares\n\n\n## Roadmap\n\n - Write tests\n - Write doc',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '22ce512352f6e7bedaddc6e7a3a6b012dcec0ab4',
+21 silly publish   _id: 'cycle-http-server@1.0.0',
+21 silly publish   _shasum: 'efdef32a28d4eac4270273d5ad49c1346f7a81a4',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name cycle-http-server
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'cycle-http-server',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   escapedName: 'cycle-http-server',
+26 silly mapToRegistry   name: 'cycle-http-server',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/cycle-http-server
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /Users/pierrot/.npm/cycle-http-server/1.0.0/package.tgz
+30 verbose request uri https://registry.npmjs.org/cycle-http-server
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 2:10:45 PM
+33 verbose request using bearer token for auth
+34 verbose request id 3c63489b86ed2ddf
+35 http request PUT https://registry.npmjs.org/cycle-http-server
+36 http 403 https://registry.npmjs.org/cycle-http-server
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '111',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Sun, 28 May 2017 12:10:46 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-cdg8734-CDG',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1495973446.770797,VS0,VE579',
+37 verbose headers   vary: 'Accept-Encoding' }
+38 verbose request invalidating /Users/pierrot/.npm/registry.npmjs.org/cycle-http-server on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: you do not have permission to publish "cycle-http-server". Are you logged in as the correct user? : cycle-http-server
+40 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+40 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+40 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:187:22)
+40 verbose stack     at emitTwo (events.js:106:13)
+40 verbose stack     at Request.emit (events.js:191:7)
+40 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1044:10)
+40 verbose stack     at emitOne (events.js:96:13)
+40 verbose stack     at Request.emit (events.js:188:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:965:12)
+41 verbose statusCode 403
+42 verbose pkgid cycle-http-server
+43 verbose cwd /Users/pierrot/Documents/projets/personal/cycle-http-server
+44 error Darwin 16.4.0
+45 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+46 error node v6.9.1
+47 error npm  v3.10.8
+48 error code E403
+49 error you do not have permission to publish "cycle-http-server". Are you logged in as the correct user? : cycle-http-server
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]

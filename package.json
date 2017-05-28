@@ -1,0 +1,38 @@
+{
+  "name": "cycle-http-server",
+  "version": "1.0.0",
+  "description": "An experimental cycle.js driver for node http module",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d dist",
+    "watch": "babel src -d dist -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrpierrot/cycle-http-server.git"
+  },
+  "keywords": [
+    "cycle.js",
+    "http",
+    "server",
+    "nodejs"
+  ],
+  "author": "Pierre Chabiland",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrpierrot/cycle-http-server/issues"
+  },
+  "homepage": "https://github.com/mrpierrot/cycle-http-server#readme",
+  "dependencies": {
+    "snabbdom-to-html": "^3.1.1",
+    "switch-path": "^1.2.0",
+    "xstream": "^10.7.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.5.1"
+  }
+}
